@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- About Hero -->
+<section class="page-hero about-hero">
+    <div class="container">
+        <h1>About Insulgo</h1>
+        <p>Empowering individuals with AI-driven health insights</p>
+    </div>
+</section>
+
+<!-- Our Story -->
+<section class="about-story">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/about-story.svg') }}" alt="Our Story" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Story</h2>
+                <p class="lead">Insulgo was born from a vision to make diabetes risk assessment more accessible and accurate using artificial intelligence.</p>
+                <p>Our team of healthcare professionals and AI experts came together to create a tool that combines medical expertise with cutting-edge technology. We believe that early awareness and prevention are key to managing diabetes risk effectively.</p>
+                <div class="mission-values mt-4">
+                    <div class="mission-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Our Mission</h4>
+                        <p>To empower individuals with accurate, accessible health risk assessment tools.</p>
+                    </div>
+                    <div class="mission-item">
+                        <i class="fas fa-star"></i>
+                        <h4>Our Vision</h4>
+                        <p>A world where everyone can make informed decisions about their health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Team -->
+<section class="about-team">
+    <div class="container">
+        <h2 class="text-center mb-5">Meet Us</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='img/team-placeholder.svg') }}" alt="Team Member" class="img-fluid rounded-circle mb-3">
+                    <h4>Nouha El Abed</h4>
+                    <p class="title">AI engineer</p>
+                    <p class="description">Leading the AI development and clinical research initiatives</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Impact -->
+<section class="about-impact">
+    <div class="container">
+        <h2 class="text-center">Our Impact</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>100,000+</h3>
+                    <p>Users Helped</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>50+</h3>
+                    <p>Countries Reached</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>93%</h3>
+                    <p>Accuracy Rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="text-center mb-5">What People Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="quote">"Insulgo helped me understand my diabetes risk factors and take preventive action."</div>
+                    <div class="author">
+                        <img src="{{ url_for('static', filename='img/testimonial-1.png') }}" alt="Testimonial">
+                        <div class="author-info">
+                            <h5>John D.</h5>
+                            <p>User</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="quote">"The AI-powered insights are incredibly accurate and helpful."</div>
+                    <div class="author">
+                        <img src="{{ url_for('static', filename='img/testimonial-2.png') }}" alt="Testimonial">
+                        <div class="author-info">
+                            <h5>Maria R.</h5>
+                            <p>Healthcare Professional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="quote">"A must-have tool for anyone concerned about diabetes risk."</div>
+                    <div class="author">
+                        <img src="{{ url_for('static', filename='img/testimonial-3.png') }}" alt="Testimonial">
+                        <div class="author-info">
+                            <h5>David M.</h5>
+                            <p>Medical Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

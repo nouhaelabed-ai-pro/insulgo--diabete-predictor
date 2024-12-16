@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Team Member Placeholder -->
+    <circle cx="100" cy="80" r="40" fill="#95a5a6"/>
+    <circle cx="100" cy="60" r="20" fill="#7f8c8d"/>
+    <path d="M40 200 
+             C 40 140, 160 140, 160 200" 
+          fill="#95a5a6"/>
+</svg>

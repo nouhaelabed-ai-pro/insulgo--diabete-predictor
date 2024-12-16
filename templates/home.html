@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 animate-fade-up">
+                <h1 class="hero-title">Smart Diabetes Risk Assessment</h1>
+                <p class="hero-text">
+                    Take control of your health with our AI-powered diabetes risk assessment tool. Get personalized insights and recommendations in minutes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="{{ url_for('predict') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-calculator me-2"></i>Check Your Risk
+                    </a>
+                    <a href="{{ url_for('features') }}" class="btn btn-outline-light btn-lg ms-3">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block">
+                <img src="{{ url_for('static', filename='img/hero-illustration.svg') }}" alt="Health Illustration" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Why Choose Insulgo?</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-robot fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">AI-Powered Analysis</h3>
+                        <p>Advanced machine learning algorithms provide accurate risk assessment based on multiple health factors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-chart-line fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">Personalized Insights</h3>
+                        <p>Get detailed insights about your risk factors and personalized recommendations for improvement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="h4">Privacy First</h3>
+                        <p>Your health data is secure and private. We never store or share your personal information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Take Control of Your Health?</h2>
+        <p class="lead mb-4">Join thousands of users who have already benefited from our risk assessment tool.</p>
+        <a href="{{ url_for('predict') }}" class="btn btn-primary btn-lg">
+            <i class="fas fa-arrow-right me-2"></i>Get Started Now
+        </a>
+    </div>
+</section>
+{% endblock %}

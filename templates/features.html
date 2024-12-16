@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Features Hero -->
+<section class="page-hero features-hero">
+    <div class="container">
+        <h1>Our Features</h1>
+        <p>Discover how Gludi helps you understand and manage your diabetes risk</p>
+    </div>
+</section>
+
+<!-- Main Features -->
+<section class="features-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Risk Assessment</h3>
+                    <p>Our advanced machine learning model analyzes multiple health indicators to provide accurate risk predictions.</p>
+                    <ul class="feature-list">
+                        <li>93% prediction accuracy</li>
+                        <li>Based on 50,000+ medical records</li>
+                        <li>Continuous learning and improvement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Comprehensive Analysis</h3>
+                    <p>Get detailed insights into your health indicators and understand their impact on your diabetes risk.</p>
+                    <ul class="feature-list">
+                        <li>Multiple health factor analysis</li>
+                        <li>Personalized risk breakdown</li>
+                        <li>Clear visual representations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Medical Standards Compliance</h3>
+                    <p>Our assessments follow established medical guidelines and standards for diabetes risk evaluation.</p>
+                    <ul class="feature-list">
+                        <li>WHO guidelines adherence</li>
+                        <li>Evidence-based approach</li>
+                        <li>Regular medical updates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy & Security</h3>
+                    <p>Your health data is protected with industry-standard security measures.</p>
+                    <ul class="feature-list">
+                        <li>Secure data handling</li>
+                        <li>Anonymous assessments</li>
+                        <li>No data storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature Comparison -->
+<section class="feature-comparison">
+    <div class="container">
+        <h2 class="text-center mb-5">Compare Our Features</h2>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Basic Health Check</th>
+                        <th>Gludi Assessment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Risk Assessment</td>
+                        <td><i class="fas fa-check text-muted"></i></td>
+                        <td><i class="fas fa-check text-primary"></i></td>
+                    </tr>
+                    <tr>
+                        <td>AI-Powered Analysis</td>
+                        <td><i class="fas fa-times text-muted"></i></td>
+                        <td><i class="fas fa-check text-primary"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Detailed Health Insights</td>
+                        <td><i class="fas fa-times text-muted"></i></td>
+                        <td><i class="fas fa-check text-primary"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Risk Factor Breakdown</td>
+                        <td><i class="fas fa-times text-muted"></i></td>
+                        <td><i class="fas fa-check text-primary"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Medical Standards Compliance</td>
+                        <td><i class="fas fa-check text-muted"></i></td>
+                        <td><i class="fas fa-check text-primary"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <div class="container text-center">
+        <h2>Experience These Features Today</h2>
+        <p>Start your comprehensive diabetes risk assessment now.</p>
+        <a href="{{ url_for('predict') }}" class="btn btn-primary btn-lg">
+            Try Risk Calculator
+        </a>
+    </div>
+</section>
+{% endblock %}

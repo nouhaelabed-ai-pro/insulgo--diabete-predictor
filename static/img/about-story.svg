@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Medical Research Illustration -->
+    <!-- Background -->
+    <rect x="0" y="0" width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- Microscope -->
+    <path d="M350 300 
+             C 350 300, 300 250, 400 200
+             C 500 150, 450 400, 350 300"
+          fill="#3498db" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- DNA Helix -->
+    <path d="M500 100 
+             C 600 150, 400 200, 500 250
+             C 600 300, 400 350, 500 400
+             C 600 450, 400 500, 500 550"
+          stroke="#e74c3c" 
+          fill="none" 
+          stroke-width="3"/>
+          
+    <!-- Medical Symbols -->
+    <circle cx="200" cy="200" r="50" fill="#2ecc71" opacity="0.5"/>
+    <circle cx="600" cy="400" r="50" fill="#f1c40f" opacity="0.5"/>
+    
+    <!-- Data Points -->
+    <circle cx="150" cy="350" r="5" fill="#9b59b6"/>
+    <circle cx="200" cy="400" r="5" fill="#9b59b6"/>
+    <circle cx="250" cy="380" r="5" fill="#9b59b6"/>
+    <circle cx="300" cy="420" r="5" fill="#9b59b6"/>
+    <circle cx="350" cy="390" r="5" fill="#9b59b6"/>
+</svg>
