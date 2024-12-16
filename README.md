@@ -24,13 +24,6 @@ Here's a visual tour of Insulgo:
 ![Landing Page](static/img/screenshots/landing.png)
 *Welcome to Insulgo - Your diabetes risk assessment companion*
 
-### Risk Assessment Form
-![Risk Assessment Form](static/img/screenshots/assessment-form.png)
-*Easy-to-use form for entering your health metrics*
-
-### Results Dashboard
-![Results Dashboard](static/img/screenshots/results.png)
-*Clear visualization of your risk assessment results*
 
 ## 🎥 Demo
 Watch Insulgo in action:
@@ -108,15 +101,6 @@ Insulgo/
 ├── generate_diabetes_data.py
 └── README.md
 ```
-
-## Contributing
-We welcome contributions to Insulgo! Here's how you can help:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
