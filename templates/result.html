@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Results - Insulgo</title>
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+    <header>
+        <h1>Your Assessment Results</h1>
+    </header>
+    <main>
+        <section class="results">
+            <div class="result-card">
+                <h2>Risk Assessment</h2>
+                {% if result.prediction == 1 %}
+                <div class="prediction high-risk">
+                    <h3>Higher Risk</h3>
+                    <p>Based on the provided information, you may have a higher risk of diabetes.</p>
+                </div>
+                {% else %}
+                <div class="prediction low-risk">
+                    <h3>Lower Risk</h3>
+                    <p>Based on the provided information, you appear to have a lower risk of diabetes.</p>
+                </div>
+                {% endif %}
+                
+                <div class="probability">
+                    <h3>Risk Probability</h3>
+                    <div class="probability-bar">
+                        <div class="probability-fill" style="width: {{ result.probability * 100 }}%"></div>
+                    </div>
+                    <p>{{ "%.1f"|format(result.probability * 100) }}%</p>
+                </div>
+
+                <div class="recommendations">
+                    <h3>Next Steps</h3>
+                    <ul>
+                        <li>Consult with a healthcare provider to discuss these results</li>
+                        <li>Maintain a healthy diet and regular exercise routine</li>
+                        <li>Monitor your blood glucose levels regularly</li>
+                        <li>Stay informed about diabetes prevention strategies</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/predict" class="cta-button">New Assessment</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Insulgo. All rights reserved.</p>
+        <p class="disclaimer">This assessment is for informational purposes only and should not be considered medical advice.</p>
+    </footer>
+</body>
+</html>
