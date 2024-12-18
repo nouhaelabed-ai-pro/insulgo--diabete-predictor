@@ -17,25 +17,22 @@ Insulgo is an intelligent web application designed to help users assess their ri
 3. **Get Results**: Receive your risk assessment along with personalized insights
 4. **Take Action**: Get recommendations for next steps and lifestyle modifications
 
-## 📸 Screenshots
+## 🎥 Demo
 Here's a visual tour of Insulgo:
 
-### Landing Page
-![Landing Page](demo/img/landing.png)
+![Demo](demo/gif/insulgodemo.gif)
 *Welcome to Insulgo - Your diabetes risk assessment companion*
 
-
-## 🎥 Demo
 Watch Insulgo in action:
 
-https://user-images.githubusercontent.com/assets/demo/demo.mp4
+https://user-images.githubusercontent.com/demo/video/demo.mp4
 
 <video width="100%" controls>
   <source src="demo/video/insulgodemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-*Note: If the video doesn't play above, you can find it in the `assets/demo` folder of the repository.*
+*Note: If the video doesn't play above, you can find it in the `demo/video` folder of the repository.*
 
 ### Quick Feature Tour
 1. 🏠 Landing page walkthrough
