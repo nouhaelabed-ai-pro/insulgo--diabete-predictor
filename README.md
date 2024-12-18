@@ -25,7 +25,7 @@ Here's a visual tour of Insulgo:
 
 Watch Insulgo in action:
 
-https://user-images.githubusercontent.com/demo/video/demo.mp4
+https://user-images.githubusercontent.com/demo/video/insulgodemo.mp4
 
 <video width="100%" controls>
   <source src="demo/video/insulgodemo.mp4" type="video/mp4">
