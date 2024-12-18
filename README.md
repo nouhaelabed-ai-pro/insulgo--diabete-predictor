@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-# Insulgo - Diabetes Risk Prediction Model
-
-This project generates synthetic diabetes data and trains a machine learning model to predict diabetes risk levels.
-
-## Setup
-
-1. Install the required packages:
-=======
 # Insulgo - Your Smart Diabetes Risk Assessment Tool
 
 ## Overview
@@ -30,7 +21,7 @@ Insulgo is an intelligent web application designed to help users assess their ri
 Here's a visual tour of Insulgo:
 
 ### Landing Page
-![Landing Page](static/img/screenshots/landing.png)
+![Landing Page](demo/img/landing.png)
 *Welcome to Insulgo - Your diabetes risk assessment companion*
 
 
@@ -40,7 +31,7 @@ Watch Insulgo in action:
 https://user-images.githubusercontent.com/assets/demo/demo.mp4
 
 <video width="100%" controls>
-  <source src="assets/demo/demo.mp4" type="video/mp4">
+  <source src="demo/video/insulgodemo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -68,7 +59,7 @@ https://user-images.githubusercontent.com/assets/demo/demo.mp4
 ## Installation
 
 ### Prerequisites
-- Python 3.8 or higher
+- Python 3.12.6
 - pip package manager
 
 ### Setup Steps
@@ -85,12 +76,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
->>>>>>> origin/master
 ```bash
 pip install -r requirements.txt
 ```
 
-<<<<<<< HEAD
+
 2. Generate the synthetic data:
 ```bash
 python generate_diabetes_data.py
@@ -130,13 +120,13 @@ Risk levels are classified as:
 ## Model
 
 The project uses a Random Forest Classifier to predict risk levels based on the input features. The model is trained on 80% of the data and evaluated on the remaining 20%.
-=======
+
 4. Run the application:
 ```bash
 python app.py
 ```
 
-5. Open your browser and navigate to `http://localhost:5000`
+5. Open your browser and navigate to `http://localhost:3000`
 
 ## Project Structure
 ```
@@ -168,4 +158,3 @@ If you encounter any issues or have questions, please:
 ---
 
 Made with ❤️ for better health awareness
->>>>>>> origin/master

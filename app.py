@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-<<<<<<< HEAD
 from flask_wtf import FlaskForm
 from wtforms import FloatField, IntegerField, SelectField, SubmitField
 from wtforms.validators import DataRequired, NumberRange
@@ -192,7 +191,7 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000, host='0.0.0.0')
-=======
+
 import joblib
 import numpy as np
 
@@ -253,4 +252,3 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True, port=3000)
->>>>>>> origin/master
