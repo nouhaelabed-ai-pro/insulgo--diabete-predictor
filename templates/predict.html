@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "base.html" %}
 
 {% block content %}
@@ -410,3 +411,61 @@
     })
 </script>
 {% endblock %}
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Assessment - Insulgo</title>
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+    <header>
+        <h1>Diabetes Risk Assessment</h1>
+    </header>
+    <main>
+        <section class="assessment-form">
+            <form action="/predict" method="POST">
+                <div class="form-group">
+                    <label for="pregnancies">Number of Pregnancies</label>
+                    <input type="number" id="pregnancies" name="pregnancies" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="glucose">Glucose Level (mg/dL)</label>
+                    <input type="number" id="glucose" name="glucose" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="blood_pressure">Blood Pressure (mm Hg)</label>
+                    <input type="number" id="blood_pressure" name="blood_pressure" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="skin_thickness">Skin Thickness (mm)</label>
+                    <input type="number" id="skin_thickness" name="skin_thickness" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="insulin">Insulin Level (mu U/ml)</label>
+                    <input type="number" id="insulin" name="insulin" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="bmi">BMI</label>
+                    <input type="number" id="bmi" name="bmi" required step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="diabetes_pedigree">Diabetes Pedigree Function</label>
+                    <input type="number" id="diabetes_pedigree" name="diabetes_pedigree" required step="0.001" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required min="0">
+                </div>
+                <button type="submit" class="submit-button">Get Assessment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Insulgo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+>>>>>>> origin/master
