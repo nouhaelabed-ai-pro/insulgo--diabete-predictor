@@ -128,16 +128,33 @@ python app.py
 ## Project Structure
 ```
 Insulgo/
+├── demo/
+│   ├── gif/
+│   │   └── insulgodemo.gif
+│   ├── img/
+│   │   └── landing.png
+│   └── video/
+│       └── insulgodemo.mp4
 ├── static/
 │   ├── css/
-│   │   └── custom.css      # Custom styling
-│   └── img/
-│       ├── hero-illustration.svg
-│       └── pattern.svg
+│   ├── img/
+│   └── js/
 ├── templates/
-│   └── predict.html        # Main prediction interface
+├── venv/
+├── .gitignore
+├── app.py
+├── diabetes_data.csv
+├── diabetes_risk_model.joblib
+├── feature_importance.png
+├── gender_encoder.joblib
 ├── generate_diabetes_data.py
-└── README.md
+├── model_metadata.joblib
+├── README.md
+├── requirements.txt
+├── scaler.joblib
+├── train_model.py
+└── utils.py
+
 ```
 
 ## License
